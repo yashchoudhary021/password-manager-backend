@@ -1,0 +1,39 @@
+password-manager-backend/
+│
+├── config/
+│   ├── db.js                # MongoDB connection setup
+│   └── jwt.js               # JWT configuration (secret, expiration, etc.)
+│
+├── controllers/
+│   ├── authController.js    # Handles authentication (login, register, etc.)
+│   ├── passwordController.js # Handles CRUD operations for passwords
+│   └── userController.js    # Handles user-related operations (profile, etc.)
+│
+├── middleware/
+│   ├── authMiddleware.js    # Middleware for JWT authentication
+│   └── errorHandler.js      # Custom error handling middleware
+│
+├── models/
+│   ├── User.js              # User model (for authentication)
+│   └── Password.js          # Password model (for storing passwords)
+│
+├── routes/
+│   ├── authRoutes.js        # Routes for authentication (login, register)
+│   ├── passwordRoutes.js    # Routes for password-related operations
+│   ├── userRoutes.js        # Routes for user-related operations
+│   └── index.js             # Combines all routes
+│
+├── services/
+│   ├── authService.js       # Business logic for authentication
+│   ├── passwordService.js   # Business logic for password operations
+│   └── userService.js       # Business logic for user operations
+│
+├── utils/
+│   ├── encryption.js        # Utility for encrypting/decrypting passwords
+│   └── validators.js        # Utility for input validation
+│
+├── .env                     # Environment variables (DB URI, JWT secret, etc.)
+├── .gitignore               # Files to ignore in Git
+├── app.js                   # Main application file (Express setup)
+├── package.json             # NPM dependencies and scripts
+└── README.md                # Project documentation
