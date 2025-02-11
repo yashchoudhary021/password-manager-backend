@@ -1,14 +1,35 @@
 {
   "name": "password-manager-backend",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
-  "main": "index.js",
+  "description": "A secure password manager backend using Node.js, Express, and MongoDB.",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "Yash Choudhary",
-  "license": "ISC"
+  "keywords": [
+    "password-manager",
+    "nodejs",
+    "express",
+    "mongodb",
+    "jwt",
+    "authentication"
+  ],
+  "author": "Yash choudhary",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.4.3"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
 }
